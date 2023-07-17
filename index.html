@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="CSS/normalize.css">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive card details form</title>
+</head>
+
+<body>
+  <section id="front-icons">
+    <div id="circle1"></div>
+    <div id="circle2"></div>
+    <p id="card-number">0000 0000 0000 0000</p>
+    <p id="card-name" class="vacio">CARDHOLDER NAME</p>
+    <div id="exp-date">
+      <p id="month">00</p>
+      <p id="slash">/</p>
+      <p id="year">00</p>
+    </div>
+  </section>
+  <section id="back-icons">
+    <p id="cvc-text">###</p>
+  </section>
+
+  <img class="tarjetas" id="front" src="images/bg-card-front.png" alt="Tarjeta_Delante">
+  <img class="tarjetas" id="back" src="images/bg-card-back.png" alt="Tarjeta_Atras">
+  <img id="fondo" src="images/bg-main-desktop.png" alt="Fondo_Decorativo">
+
+  <section id="right">
+    <form id="form">
+      <div id="cuerpo-formulario">
+        <label for="name">CARDHOLDER NAME</label>
+        <input required autocomplete="off" name="name" type="text" id="name" maxlength="22"
+          placeholder="e.g. Jane Appleseed">
+        <br>
+        <label for="number">CARD NUMBER</label>
+        <input required autocomplete="off" name="number" type="text" id="number" maxlength="19"
+          placeholder="e.g. 1234 5678 9123 0000">
+        <div id="number_error"></div>
+        <br>
+        <div>
+          <label>EXP. DATE (MM/YY)</label>
+          <label for="cvc">CVC</label>
+          <br>
+          <select required id="d_month" placeholder="MM" class="date">
+            <option value="" disabled selected hidden>MM</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+          <select required id="d_year" class="date">
+            <option value="" disabled selected hidden>YY</option>
+          </select>
+          <input required type="text" id="cvc" placeholder="e.g. 123">
+        </div>
+      </div>
+      <div id="enviar">
+        <button disabled type="submit" onclick="animateButton()" id="b-send">Enter your data</button>
+        <img id="completado" src="images/icon-complete.svg" alt="">
+        <h3 id="confirmacion"></h3>
+        <p id="mensaje-aviso"></p>
+        <button id="continue" type="submit">Continue</button>
+      </div>
+    </form>
+  </section>
+  <script src="JS/index.js"></script>
+</body>
+
+</html>

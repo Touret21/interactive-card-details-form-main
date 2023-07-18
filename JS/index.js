@@ -59,7 +59,7 @@ formulario.number.addEventListener('keydown', function (event) {
     isKeyPressed = true;
 });
 
-formulario.number.addEventListener('keyup', function (e) {
+formulario.number.addEventListener('input', function (e) {
     let valorInput = e.target.value;
 
     formulario.number.value = valorInput.replace(/\s/g, '') // eliminar espacios en blanco
@@ -145,7 +145,7 @@ formulario.cvc.addEventListener('input', (e) => {
     habilitarBoton();
 });
 
-year.addEventListener('change', (e) => {
+year.addEventListener('input', (e) => {
     const selectElement = e.target.value; // Obtener el elemento select actual
 
     const selectedValue = selectElement.value;
@@ -160,7 +160,7 @@ year.addEventListener('change', (e) => {
     habilitarBoton();
 });
 
-month.addEventListener('change', (e) => {
+month.addEventListener('input', (e) => {
     const selectElement = e.target.value; // Obtener el elemento select actual
 
     const selectedValue = selectElement.value;

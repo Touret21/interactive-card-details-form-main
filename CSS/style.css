@@ -24,12 +24,12 @@ body {
 
 .tarjetas {
 	position: absolute;
+	width: 400px;
 	z-index: 1;
 }
 
 #front {
 	position: absolute;
-	width: 400px;
 	left: 14%;
 	top: 25%;
 	z-index: 2;
@@ -37,7 +37,6 @@ body {
 
 #back {
 	position: absolute;
-	width: 400px;
 	left: 18%;
 	bottom: 25%;
 	z-index: 2;
@@ -53,7 +52,8 @@ body {
 }
 
 form {
-	width: 22%;
+	width: 30%;
+	margin-left: 30%;
 	position: absolute;
 	display: flex;
 	flex-direction: column;
@@ -269,18 +269,105 @@ form div label {
 
 /* responsive */
 
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
+	body {
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+	}
+
 	#fondo {
 		min-width: 100%;
-		height: 100vh;
-		object-fit: cover;
+		height: 30vh;
 	}
+
 	#right {
-		width: 100vw;
-		height: 100vh;
-		background-color: blue;
+		min-width: 100%;
+		height: 70vh;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+	}
+
+	.tarjetas {
+		width: 350px;
+	}
+
+	#front {
+		top: 16%;
+		left: 5%;
+		z-index: 3;
+	}
+
+	#back {
+		position: absolute;
+		left: 15%;
+		bottom: 0%;
+		top: 3%;
+	}
+
+	#front-icons {
+		top: 16%;
+		left: 5%;
+		width: 350px;
+		z-index: 4;
+	}
+
+	#back-icons {
+		left: 15%;
+		bottom: 0%;
+		top: 5%;
+		width: 350px;
+		font-size: 12px;
+		z-index: 3;
+	}
+
+	#cvc-text {
+		top: 25%;
+		right: 10%;
+	}
+
+	#circle1 {
+		width: 35px;
+		height: 35px;
+		top: 20px;
+		left: 20px;
+	}
+
+	#circle2 {
+		width: 15px;
+		height: 15px;
+		top: 30px;
+		left: 70px;
+	}
+
+	#card-number {
+		font-size: 20px;
+		letter-spacing: 2px;
+		left: 7%;
+		top: 35%;
+	}
+
+	#card-name {
+		position: absolute;
+		top: 57%;
+		left: 7%;
+		color: white;
+		font-size: 12px;
+	}
+
+	#exp-date {
+		top: 57%;
+		right: 7%;
+		color: white;
+		font-size: 12px;
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+	}
+
+	#form {
+		width: 90%;
+		margin-left: 0%;
 	}
 }

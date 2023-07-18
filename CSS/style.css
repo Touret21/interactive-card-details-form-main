@@ -277,7 +277,7 @@ form div label {
 	}
 
 	#fondo {
-		min-width: 100%;
+		width: 100%;
 		height: 30vh;
 	}
 
@@ -290,40 +290,42 @@ form div label {
 	}
 
 	.tarjetas {
-		width: 350px;
+		width: 340px;
 	}
 
 	#front {
-		top: 16%;
+		top: 17%;
 		left: 5%;
 		z-index: 3;
 	}
 
 	#back {
 		position: absolute;
-		left: 15%;
+		left: 9%;
 		bottom: 0%;
 		top: 3%;
 	}
 
 	#front-icons {
-		top: 16%;
+		top: 17%;
 		left: 5%;
-		width: 350px;
+		width: 340px;
+		height: 185px;
 		z-index: 4;
 	}
 
 	#back-icons {
-		left: 15%;
-		bottom: 0%;
-		top: 5%;
-		width: 350px;
+		right: 0%;
+		left: 9%;
+		top: 3%;
+		width: 340px;
+		height: 185px;
 		font-size: 12px;
 		z-index: 3;
 	}
 
 	#cvc-text {
-		top: 25%;
+		top: 35%;
 		right: 10%;
 	}
 
@@ -369,5 +371,99 @@ form div label {
 	#form {
 		width: 90%;
 		margin-left: 0%;
+	}
+}
+
+@media (max-height: 630px) {
+	#front {
+		top: 17%;
+		left: 5%;
+		z-index: 3;
+		visibility: hidden;
+	}
+
+	#back {
+		position: absolute;
+		left: 9%;
+		bottom: 0%;
+		top: 3%;
+		visibility: hidden;
+	}
+
+	#front-icons {
+		top: 17%;
+		left: 5%;
+		width: 340px;
+		height: 185px;
+		z-index: 4;
+		visibility: hidden;
+	}
+
+	#back-icons {
+		right: 0%;
+		left: 9%;
+		top: 3%;
+		width: 340px;
+		height: 185px;
+		font-size: 12px;
+		z-index: 3;
+		visibility: hidden;
+	}
+
+	#cvc-text {
+		top: 35%;
+		right: 10%;
+		visibility: hidden;
+	}
+
+	#circle1 {
+		width: 35px;
+		height: 35px;
+		top: 20px;
+		left: 20px;
+		visibility: hidden;
+	}
+
+	#circle2 {
+		width: 15px;
+		height: 15px;
+		top: 30px;
+		left: 70px;
+		visibility: hidden;
+	}
+
+	#card-number {
+		font-size: 20px;
+		letter-spacing: 2px;
+		left: 7%;
+		top: 35%;
+		visibility: hidden;
+	}
+
+	#card-name {
+		position: absolute;
+		top: 57%;
+		left: 7%;
+		color: white;
+		font-size: 12px;
+		visibility: hidden;
+	}
+
+	#exp-date {
+		top: 57%;
+		right: 7%;
+		color: white;
+		font-size: 12px;
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+		visibility: hidden;
+	}
+	#fondo {
+		width: 100vw;
+		height: 10vh;
+	}
+	form {
+		margin-top: 30%;
 	}
 }

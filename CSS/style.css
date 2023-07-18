@@ -183,6 +183,7 @@ form div label {
 
 #cvc-text {
 	position: absolute;
+	top: 80px;
 	right: 50px;
 }
 
@@ -325,7 +326,7 @@ form div label {
 	}
 
 	#cvc-text {
-		top: 35%;
+		top: 40%;
 		right: 10%;
 	}
 
@@ -347,19 +348,19 @@ form div label {
 		font-size: 20px;
 		letter-spacing: 2px;
 		left: 7%;
-		top: 35%;
+		top: 40%;
 	}
 
 	#card-name {
 		position: absolute;
-		top: 57%;
+		top: 67%;
 		left: 7%;
 		color: white;
 		font-size: 12px;
 	}
 
 	#exp-date {
-		top: 57%;
+		top: 67%;
 		right: 7%;
 		color: white;
 		font-size: 12px;

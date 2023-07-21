@@ -52,8 +52,7 @@ body {
 }
 
 form {
-	width: 30%;
-	margin-left: 30%;
+	width: 25%;
 	position: absolute;
 	display: flex;
 	flex-direction: column;
@@ -270,7 +269,7 @@ form div label {
 
 /* responsive */
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
 	body {
 		margin: 0;
 		display: flex;
@@ -370,7 +369,7 @@ form div label {
 	}
 
 	#form {
-		width: 90%;
+		width: 75%;
 		margin-left: 0%;
 	}
 }
